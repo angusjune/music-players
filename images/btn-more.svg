@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="42px" height="42px" viewBox="0 0 42 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.2 (12043) - http://www.bohemiancoding.com/sketch -->
+    <title>btn-more</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="iPhone6@2x" sketch:type="MSArtboardGroup" transform="translate(-674.000000, -64.000000)">
+            <g id="top" sketch:type="MSLayerGroup">
+                <g id="btn-more" transform="translate(674.000000, 64.000000)" sketch:type="MSShapeGroup">
+                    <rect id="bg-copy" opacity="0.01" fill="#222222" x="0" y="0" width="42" height="42"></rect>
+                    <path d="M6,10 L36,10 L36,12 L6,12 L6,10 Z M6,20 L36,20 L36,22 L6,22 L6,20 Z M6,30 L36,30 L36,32 L6,32 L6,30 Z" id="Rectangle-79" fill="#FFFFFF"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

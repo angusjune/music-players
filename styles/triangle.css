@@ -1,0 +1,173 @@
+/*! Generated at Thu May 21 2015 17:10:12 GMT+0800 (CST). Included icons: triangle, pause */
+/*!
+ * Marka - v0.3.1
+ * http://fian.my.id/marka
+ *
+ * Copyright 2014 Alfiana E. Sibuea and other contributors
+ * Released under the MIT license
+ * https://github.com/fians/marka/blob/master/LICENSE
+ */
+/* Core style */
+.marka {
+  position: relative;
+  display: inline-block;
+  vertical-align: bottom;
+  transition: all 500ms; }
+
+.marka i {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background: #000000;
+  transition: all 500ms; }
+
+.marka.marka-set i {
+  opacity: 1; }
+
+.marka.marka-rotate-right {
+  transform: rotate(90deg); }
+
+.marka.marka-rotate-left {
+  transform: rotate(-90deg); }
+
+.marka.marka-rotate-down {
+  transform: rotate(180deg); }
+
+.marka.marka-icon-empty {
+  transform: scale(0); }
+
+/* Triangle icon */
+.marka.marka-icon-triangle i {
+  transform: rotate(-60deg) skewX(-30deg) scale(0.4, 0.348) translate(2%, -5%); }
+
+.marka.marka-icon-triangle i:nth-child(2) {
+  border-radius: 0 0 0 30%;
+  transform: rotate(180deg) skewX(-30deg) scale(0.4) translate(5%, -30%); }
+
+.marka.marka-icon-triangle i:nth-child(3) {
+  border-radius: 0 0 0 30%;
+  transform: rotate(90deg) skewY(-30deg) scale(0.4) translate(30%, -2%); }
+
+/* Pause icon */
+.marka.marka-icon-pause i {
+  transform: rotate(90deg) scale(0.8, 0.1) translate(0%, 200%); }
+
+.marka.marka-icon-pause i:nth-child(2) {
+  transform: rotate(90deg) scale(0.8, 0.1) translate(0%, -200%); }
+
+* {
+  box-sizing: border-box; }
+
+html, body {
+  height: 100%; }
+
+html {
+  font-size: 62.5%;
+  -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  font-size: 1.6rem;
+  background: #222;
+  font-family: 'helvetica neue', helvetica, sans-serif; }
+
+.canvas {
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+.container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%; }
+
+.header {
+  position: relative;
+  width: 100%;
+  padding-top: 35px;
+  z-index: 4; }
+
+.nav {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .nav__title {
+    font-weight: normal;
+    color: #fff;
+    text-align: center;
+    font-size: 1.9rem;
+    margin: 0; }
+  .nav__btn-close, .nav__btn-more {
+    color: white;
+    padding: 0 3rem;
+    background: no-repeat center/26px;
+    width: 26px;
+    height: 26px;
+    text-indent: -9999px; }
+  .nav__btn-close {
+    background-image: url(../images/btn-close.svg); }
+  .nav__btn-more {
+    background-image: url(../images/btn-more.svg); }
+
+.btn-wrapper, .cover-wrapper {
+  position: absolute; }
+
+.lyric-wrapper {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  bottom: 24rem; }
+
+.lyric {
+  margin: 1rem 0;
+  font-size: 1em;
+  color: #09BB07;
+  height: 1em; }
+
+.lyric--prev, .lyric--next {
+  color: #424242; }
+
+.lyrics {
+  position: relative; }
+
+.btn-wrapper {
+  padding: 3.2rem 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  text-align: center;
+  bottom: 5rem;
+  z-index: 2; }
+
+.btn {
+  display: block;
+  height: 33px;
+  flex: 1 0 0;
+  color: white;
+  background: no-repeat center/30px; }
+  .btn--fav {
+    background-image: url(../images/btn-fav.svg); }
+  .btn--list {
+    background-image: url(../images/btn-list.svg); }
+
+.cover-wrapper {
+  display: none; }
+
+.cover-wrapper img {
+  display: block;
+  max-width: 100%; }
+
+.canvas--top {
+  z-index: 1; }
+
+/*# sourceMappingURL=triangle.css.map */

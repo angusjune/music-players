@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>泡沫 - 邓紫棋</title>
+    <link rel="stylesheet" href="styles/triangle.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta  id="status_bar" name="apple-mobile-web-app-status-bar-style" content="white-translucent" />
+    <meta name="apple-mobile-web-app-title" content="泡沫">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="apple-touch-icon" href="images/default-album.png">
+
+  <link id="favicon" rel="icon" href="images/default-album.png"/>
+</head>
+<body>
+
+<header class="header">
+    <nav class="nav">
+        <a href="#" class="nav__btn-close">Close</a>
+        <h1 class="nav__title">泡沫</h1>
+        <a href="#" class="nav__btn-more">More</a>
+    </nav>
+</header>
+
+<canvas class="canvas" id="canvas" width="320" height="640"></canvas>
+<canvas class="canvas" id="canvas2" width="320" height="640"></canvas>
+
+<div id="log"></div>
+
+<div class="container">
+
+    <div class="cover-wrapper">
+        <figure class="cover">
+            <img src="images/default-album.png" alt="G.E.M Best of 2008 - 2012"/>
+        </figure>
+    </div>
+
+    <div class="lyric-wrapper">
+        <div class="lyrics">
+            <div class="lyric lyric--prev" id="prevLyric"></div>
+            <div class="lyric" id="lyric"></div>
+            <div class="lyric lyric--next" id="nextLyric"></div>
+            <div class="lyric lyric--next" id="nextLyric2"></div>
+        </div>
+    </div>
+
+
+
+    <div class="btn-wrapper">
+        <a href="#" class="btn btn--fav"></a>
+        <a href="#" class="btn btn--control pause"><i class="icon" id="iconPlay"></i></a>
+        <a href="#" class="btn btn--list"></a>
+    </div>
+
+</div>
+
+
+
+<script src="scripts/jquery-2.1.4.min.js"></script>
+<script src="scripts/marka.min.js"></script>
+<script src="scripts/shaky.js"></script>
+<script src="scripts/lrc.js"></script>
+<script src="scripts/triangle.js"></script>
+
+</body>
+</html>

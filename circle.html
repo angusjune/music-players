@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>single - artist</title>
+  <link rel="stylesheet" href="styles/circle.css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+  <!-- Add to homescreen for Safari on iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta id="status_bar" name="apple-mobile-web-app-status-bar-style" content="white-translucent" />
+  <meta id="app-title" name="apple-mobile-web-app-title" content="single - artist">
+  <meta name="format-detection" content="telephone=no">
+  <link id="touch-icon" rel="apple-touch-icon" href="images/default-album.png">
+
+  <link id="favicon" rel="icon" href="images/default-album.png"/>
+</head>
+<body class="circle">
+
+<header class="header">
+  <nav class="nav">
+    <a href="#" class="nav__btn-close">CLOSE</a>
+    <div class="song-info">
+      <h1 class="nav__title">single</h1>
+    </div>
+    <a href="#" class="nav__btn-more">MORE</a>
+  </nav>
+</header>
+
+<canvas class="canvas" id="canvas" width="320" height="640"></canvas>
+<canvas class="canvas canvas--top" id="canvas2" width="320" height="640"></canvas>
+
+<div id="log"></div>
+
+
+<div class="cover-wrapper">
+  <figure class="cover">
+    <img src="images/default-album.png" id="cover" alt="album"/>
+  </figure>
+</div>
+
+<div class="lyric-wrapper">
+  <div class="lyrics">
+    <div class="lyric lyric--current" id="lyric"></div>
+  </div>
+</div>
+
+
+<div class="btn-wrapper">
+  <a href="#" class="btn btn--fav"></a>
+  <a href="#" class="btn btn--control pause"><i class="icon" id="iconPlay"></i></a>
+  <a href="#" class="btn btn--list"></a>
+</div>
+
+<script src="scripts/jquery-2.1.4.min.js"></script>
+<script src="scripts/hammer.min.js"></script>
+<script src="scripts/inobounce.min.js"></script>
+<script src="scripts/lrc.js"></script>
+<script src="scripts/marka.min.js"></script>
+<script src="scripts/circle.js"></script>
+
+</body>
+</html>
