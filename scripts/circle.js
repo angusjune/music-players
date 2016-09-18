@@ -6,13 +6,13 @@
 /* 有中文说明的参数是可以修改的 */
 
 /* Assets */
-/* ath is relative to root */
-var soundSource = 'assets/mp3/god-save-the-queen.mp3';    // MP3文件路径
+/* Path is relative to root */
+var soundSource = 'assets/mp3/where-the-wild-roses-grow.mp3';    // MP3文件路径
 var lyricSource = 'assets/lrc/god-save-the-queen.lrc';  // LRC歌词文件路径
-var coverSource = 'assets/cover/god-save-the-queen.png';  // 封面文件路径
+var coverSource = 'assets/cover/lulu.jpg';  // 封面文件路径
 
 var infoTitle  = 'God Save the Queen'; //歌曲名字
-var infoArtist = 'Sex Pistols'; //歌手名字
+var infoArtist = 'Lou Reed'; //歌手名字
 var infoAlbum  = 'Never Mind the Bollocks'; //专辑名
 
 
@@ -59,7 +59,7 @@ var circleRadius2 = 180;
 var dotsNum2      = 20;
 var dotRadius2    = 3;
 
-var circleRadius3 = 280;
+var circleRadius3 = 260;
 var dotsNum3      = 26;
 var dotRadius3    = dotRadius2; // 小点半径同第2圈的小点半径,可修改为其它值(阿拉伯数字或其它变量名,如 2 或 dotRadius1)
 
@@ -70,7 +70,7 @@ var bounceRate3 = 2;
 
 /* 控制随机点 */
 
-var randomDotFill = '#09bb07'; // 随机点颜色,亦可使用rgb()或rgba().例如rgb(250, 250, 250) 或 rgba(255, 255, 255, 0.5)
+var randomDotFill = '#e6b749'; // 随机点颜色,亦可使用rgb()或rgba().例如rgb(250, 250, 250) 或 rgba(255, 255, 255, 0.5)
 
 var sizeMin = 8;
 var sizeMax = 20;
@@ -154,7 +154,7 @@ function init() {
   var cover = new Image();
 
   cover.onload = function(){
-    randomDotFill = getAverageColor(document.querySelector('.cover-wrapper img'));
+    //randomDotFill = getAverageColor(document.querySelector('.cover-wrapper img'));
     console.log(randomDotFill);
   };
   cover.src = coverSource;
@@ -507,7 +507,7 @@ function sizingCanvas() {
     cx = canvasW / 2;
     cy = canvasH / 2 + cyOffset;
 
-    $('.cover-wrapper').attr('style', 'top: ' + (cy - 130) / 2 + 'px'); // todo change the magic number 130
+    $('.cover-wrapper').attr('style', 'top: ' + (cy - 165) / 2 + 'px'); // todo change the magic number 130
 }
 
 function tangent(deg) {
@@ -644,4 +644,3 @@ $('.lyrics').on("touchmove touchstart", function(){
     }
   }, 500);
 });
-

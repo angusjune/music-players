@@ -172,10 +172,10 @@ body {
 
 .cover-wrapper {
   display: block;
-  width: 121px;
-  height: 121px;
-  left: calc(50% - (121px / 2));
-  top: calc(50% - (121px / 2) - 50px); }
+  width: 160px;
+  height: 160px;
+  left: calc(50% - (160px / 2));
+  top: calc(50% - (160px / 2) - 50px); }
   .cover-wrapper .cover {
     margin: 0; }
   .cover-wrapper img {
